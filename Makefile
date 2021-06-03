@@ -1,5 +1,5 @@
 FUNCTION_NAME ?= secretsProvisioner
-S3_BUCKET ?= 543279062384-cfn-lambda
+S3_BUCKET ?= 839431922263-cfn-lambda
 S3_OBJECT_VERSION ?= $$(aws s3api list-object-versions --bucket $(S3_BUCKET) --prefix $(FUNCTION_NAME).zip \
 --query 'Versions[?IsLatest].VersionId' --output text)
 
